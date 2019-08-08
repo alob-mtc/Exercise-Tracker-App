@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 // functional react compoment
+// the table body
 const Exercise = props => (
     <tr>
         <td>{props.exercise.username}</td>
@@ -29,6 +30,7 @@ export default class ExerciseList extends Component {
     }
 
     componentDidMount() {
+        // get 
         axios.get('http://localhost:4000/exercise')
         .then(res => {
             this.setState({

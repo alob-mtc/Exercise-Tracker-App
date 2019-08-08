@@ -21,7 +21,8 @@ export default class CreateExercise extends Component {
             description: '',
             duration: 0,
             date: new Date(),
-            users: []
+            users: [],
+            msg: null
         };
     }
 
@@ -64,6 +65,26 @@ export default class CreateExercise extends Component {
             date: date
         });
     }
+    
+    onChangeMsg(data, pass) {
+        this.setState({     //update state
+            msg: {data, pass}
+        });
+    }
+
+    // set alert to the UI
+    update_myview() {
+        if (this.state.msg != null) {
+            if (this.state.msg.pass) {
+                return (
+                    <div class="alert alert-success" role="alert">{this.state.msg.data}</div>
+                )
+            }
+            return (
+                <div class="alert alert-danger" role="alert">{this.state.msg.data}</div>
+            )
+        }
+    }
 
     onSubmit(e) {
         e.preventDefault();
@@ -78,18 +99,23 @@ export default class CreateExercise extends Component {
         console.log(exercise);
         axios.post('http://localhost:4000/exercise/add', exercise)
         .then(res => {
-            console.log('Exercise added!!', res.data);
+            const msg = 'Exercise added!!';
+            this.onChangeMsg(msg, true);
+            console.log(msg, res.data);
         })
         .catch(res => {
             console.log(res.data);  
         });
-        window.location = '/';
+        setTimeout(() =>{
+            window.location = '/';
+        }, 998);
     }
 
     render() {
         return (
             <div>
                 <h3>Create New Exercise Log</h3>
+                { this.update_myview() }
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Username: </label>
