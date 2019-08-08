@@ -29,4 +29,5 @@ It is a CRUD app that helps connect with the database
         1. It allows you to create users 
         2. Create exercises for the users
         3. Edit the exercises
-    It displays the list of user exercises in a table
+---
+        It displays the list of user exercises in a table
