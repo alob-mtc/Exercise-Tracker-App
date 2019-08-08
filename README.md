@@ -31,3 +31,11 @@ It is a CRUD app that helps connect with the database
         3. Edit the exercises
 ---
         It displays the list of user exercises in a table
+
+| Username | Description | Duration | Date | Actions |
+|----------|-------------|----------|-----|---------|
+| alob_mtc | description | duration | date | actions |
+| bola     | description | duration | date | action |
+| tosin    | description | duration | date | actions |
+| ayo      | description | duration | date | actions |
+| joy      | description | duration | date | actions |
