@@ -1,0 +1,26 @@
+{
+  "name": "node-rest-api",
+  "version": "1.0.0",
+  "description": "api route with authentication software",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./bin/server"
+  },
+  "author": "alob_mtc",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "*",
+    "body-parser": "*",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "*",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "*",
+    "morgan": "*",
+    "multer": "*"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
