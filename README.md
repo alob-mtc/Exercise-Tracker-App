@@ -42,9 +42,9 @@ It is a CRUD app that helps connect with the database
 
 ## Task
 
-1. [x] Build the curd operations
-1. [x] Build the UI that interact with the backend
-1. [] Add more feature 
+[x] Build the curd operations
+[x] Build the UI that interact with the backend
+[] Add more feature 
 
 __The plain is to build a full fledged production ready Exercise Tacker(manager) application that helps a user manage their weekly exercise__
 
