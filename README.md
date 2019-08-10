@@ -46,5 +46,5 @@ It is a CRUD app that helps connect with the database
 1. [x] Build the UI that interact with the backend
 1. [] Add more feature 
 
-__The plain is to build a full fledged production ready Exercise Tacker(manager) application that helps a user manage thier weekly exercise__
+__The plain is to build a full fledged production ready Exercise Tacker(manager) application that helps a user manage their weekly exercise__
 
