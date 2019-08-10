@@ -39,3 +39,12 @@ It is a CRUD app that helps connect with the database
 | user     | description | duration | date | actions |
 | user     | description | duration | date | actions |
 | user     | description | duration | date | actions |
+
+## Task
+
+1. [x] Build the curd operations
+1. [x] Build the UI that interact with the backend
+1. [] Add more feature 
+
+__The plain is to build a full fledged production ready Exercise Tacker(manager) application that helps a user manage thier weekly exercise__
+
